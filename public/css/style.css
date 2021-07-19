@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-site: #F5F5F5;
+    --dark: #4E4E4E;
+    --blue: #1493DA;
+}
+
+
+body {
+    background-color: var(--bg-site);
+    color: var(--dark);
+}
+
+/* ---------- Header ---------- */
+header {
+    display: flex;
+    align-items: center;
+
+    height: 80px;
+
+    max-width: 1444px;   
+    margin: 0 auto;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: var(--dark);
+}
+header .logo img {
+    margin: 0 1rem;
+}   
+header .logo h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
