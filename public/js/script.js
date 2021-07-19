@@ -44,5 +44,5 @@ document.body.addEventListener('keyup', (event) => {
 
 
 buttonPlayBeats.addEventListener('click', () => {
-    playBeats(inputBeats.value);
+    playBeats(inputBeats.value.toLocaleLowerCase());
 });
