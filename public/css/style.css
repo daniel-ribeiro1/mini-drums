@@ -40,3 +40,60 @@ header .logo h1 {
     font-size: 2rem;
     font-weight: 500;
 }
+
+/* ---------- Button ---------- */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin: 5rem auto 0;
+    max-width: 350px;
+}
+
+main .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 5rem;
+    width: 5rem;
+    
+    border: 0.5px solid var(--blue);
+    border-radius: 40px;
+
+    text-align: center;
+    font-size: 3rem;
+    color: var(--blue);
+
+    box-shadow: 0px 4px 8px #4e4e4e67;
+
+    cursor: pointer;
+    background-color: #FFFFFF;
+
+    transition: background-color 0.5s, box-shadow 0.5s, color 0.5s;
+
+}
+main .button.middle {
+    margin: 2rem;
+}
+
+main .button.active {
+    background-color: var(--blue);
+    color: #FFFFFF;
+    box-shadow: 0px 8px 8px #4e4e4e67;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+
+    main .button {
+        font-size: 2rem;
+    }
+    main .button.middle {
+        margin: 1rem;
+    }
+}
