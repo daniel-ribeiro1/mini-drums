@@ -24,7 +24,7 @@ header {
     height: 80px;
 
     max-width: 1444px;   
-    margin: 0 auto;
+    margin: 0 auto 3rem;
 }
 header .logo {
     display: flex;
@@ -41,18 +41,18 @@ header .logo h1 {
     font-weight: 500;
 }
 
-/* ---------- Button ---------- */
-main {
+/* ---------- Buttons Box ---------- */
+main .buttons-box {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 
-    margin: 5rem auto 0;
+    margin: 2rem auto 0;
     max-width: 350px;
 }
 
-main .button {
+main .buttons-box .button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,25 +75,85 @@ main .button {
     transition: background-color 0.5s, box-shadow 0.5s, color 0.5s;
 
 }
-main .button.middle {
+main .buttons-box .button.middle {
     margin: 2rem;
 }
 
-main .button.active {
+main .buttons-box .button.active {
     background-color: var(--blue);
     color: #FFFFFF;
     box-shadow: 0px 8px 8px #4e4e4e67;
+}
+
+/* ---------- Input Box ---------- */
+main .input-box {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 600px;
+}
+#beats {
+    height: 50px;
+
+    font-size: 1rem;
+    text-indent: 1rem;
+    color: var(--blue);
+
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    margin: 5rem 0 1.75rem;
+
+    box-shadow: 0px 6px 6px #4e4e4e67;
+}
+#play {
+    height: 40px;
+    width: 80px;
+
+    font-size: 1rem;
+    color: var(--blue);
+    
+    margin-bottom: 2rem;
+    
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    
+    cursor: pointer;
+
+    transition: backgound-color 0.5s, color 0.8s;
+}
+#play:hover {
+    background-color: var(--blue);
+    color: #FFFFFF;
+}
+
+main .input-box small {
+    font-style: italic;
+    font-size: 0.75rem;
+    color: rgb(129, 129, 129)
 }
 
 @media screen and (max-width: 600px) {
     body {
         font-size: 12px;
     }
-
-    main .button {
+    /* ---------- Header ---------- */
+    header {
+        margin-bottom: 1rem;
+    }
+    /* ---------- Buttons Box ---------- */
+    main .buttons-box .button {
         font-size: 2rem;
     }
-    main .button.middle {
+    main .buttons-box .button.middle {
         margin: 1rem;
+    }
+
+    /* ---------- Input Box ---------- */
+    #beats {
+        margin-top: 2rem;
     }
 }

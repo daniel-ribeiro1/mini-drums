@@ -20,15 +20,27 @@
     </header>
 
     <main>
-        <button class="button" data-key="keyq">Q</button>
-        <button class="button middle" data-key="keyw">W</button>
-        <button class="button" data-key="keye">E</button>
-        <button class="button" data-key="keya">A</button>
-        <button class="button middle" data-key="keys">S</button>
-        <button class="button" data-key="keyd">D</button>
-        <button class="button" data-key="keyz">Z</button>
-        <button class="button middle" data-key="keyx">X</button>
-        <button class="button" data-key="keyc">C</button>
+        <div class="buttons-box">
+            <button class="button" data-key="keyq">Q</button>
+            <button class="button middle" data-key="keyw">W</button>
+            <button class="button" data-key="keye">E</button>
+            <button class="button" data-key="keya">A</button>
+            <button class="button middle" data-key="keys">S</button>
+            <button class="button" data-key="keyd">D</button>
+            <button class="button" data-key="keyz">Z</button>
+            <button class="button middle" data-key="keyx">X</button>
+            <button class="button" data-key="keyc">C</button>
+        </div>
+        <div class="input-box">
+            <input type="text" id="beats" placeholder="Escreva alguma batida...">
+            <button id="play">
+                Tocar
+            </button>
+
+            <small>
+                * Os espaços (Ou qualquer outro caractere que não está na tela) servem para dar um intervalo maior entre uma batida e outra.
+            </small>
+        </div>
     </main>
 
     <script src="./public/js/script.js"></script>
